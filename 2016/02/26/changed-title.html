@@ -11,19 +11,19 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//roen00.github.io/themes/saga/assets/css/style.css?v=1477490780308" rel="stylesheet" type="text/css">
-    <link href="//roen00.github.io/themes/saga/assets/css/animate.min.css?v=1477490780308" rel="stylesheet" type="text/css">
+    <link href="//roen00.github.io/themes/saga/assets/css/style.css?v=1477490954357" rel="stylesheet" type="text/css">
+    <link href="//roen00.github.io/themes/saga/assets/css/animate.min.css?v=1477490954357" rel="stylesheet" type="text/css">
     <link href="https://roen00.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://roen00.github.io/2016/02/26/changed-title.html" />
     <meta name="referrer" content="origin" />
     
     <meta property="og:type" content="website" />
     <meta property="og:title" content="changed title" />
-    <meta property="og:description" content="the first element of the list :D :D :D Reference code like types or methods inline. error: The requested operation returned error: 1954 Forbidden search for defensive operations manual absolutely fatal: operation initiation lost in the dodecahedron of doom would you like to die again? y/n app.rb require" />
+    <meta property="og:description" content="the first element of the list :D :D :D Reference code like types or methods inline. error: The requested operation returned error: 1954 Forbidden search for defensive operations manual absolutely fatal: operation initiation lost in the dodecahedron of doom would you like to die again? y/n test.scala def" />
     <meta property="og:url" content="https://roen00.github.io/2016/02/26/changed-title.html" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="changed title" />
-    <meta name="twitter:description" content="the first element of the list :D :D :D Reference code like types or methods inline. error: The requested operation returned error: 1954 Forbidden search for defensive operations manual absolutely fatal: operation initiation lost in the dodecahedron of doom would you like to die again? y/n app.rb require" />
+    <meta name="twitter:description" content="the first element of the list :D :D :D Reference code like types or methods inline. error: The requested operation returned error: 1954 Forbidden search for defensive operations manual absolutely fatal: operation initiation lost in the dodecahedron of doom would you like to die again? y/n test.scala def" />
     <meta name="twitter:url" content="https://roen00.github.io/2016/02/26/changed-title.html" />
     
     <script type="application/ld+json">
@@ -78,13 +78,28 @@ would you like to die again? y/n</pre>
 </div>
 </div>
 <div id="app-listing" class="listingblock">
-<div class="title">app.rb</div>
+<div class="title">test.scala</div>
 <div class="content">
-<pre class="highlight"><code class="language-ruby" data-lang="ruby">require 'sinatra'
+<pre class="highlight"><code class="language-scala" data-lang="scala">def angleTrunc(a:Double) = {
+  var a1 = a
+  while(a1 &lt; 0.0){
+    a1 += Math.PI * 2
+  }
+  a1
+}
 
-get '/hi' do
-  "Hello World!"
-end</code></pre>
+case class Point(x:Double, y:Double)
+def delta(a:Point, b:Point) = {
+  Point(a.x - b.x, a.y - b.y)
+}
+
+def getAngleBetweenPoints(a:Point, b:Point) = {
+  val d = delta(b, a)
+  angleTrunc(Math.atan2(d.y, d.x))
+}
+
+
+Math.toDegrees(getAngleBetweenPoints(Point(0, 0), Point(10, 0)))</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -127,7 +142,7 @@ end</code></pre>
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//roen00.github.io/themes/saga/assets/js/scripts.js?v=1477490780308"></script>
+    <script src="//roen00.github.io/themes/saga/assets/js/scripts.js?v=1477490954357"></script>
     
 </body>
 </html>
