@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>https://roen00.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 26 Oct 2016 14:06:20 GMT</lastBuildDate><atom:link href="https://roen00.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[changed title]]></title><description><![CDATA[<div class="olist arabic">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>https://roen00.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 26 Oct 2016 14:09:14 GMT</lastBuildDate><atom:link href="https://roen00.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[changed title]]></title><description><![CDATA[<div class="olist arabic">
 <ol class="arabic">
 <li>
 <p>the first element of the list</p>
@@ -19,13 +19,28 @@ would you like to die again? y/n</pre>
 </div>
 </div>
 <div id="app-listing" class="listingblock">
-<div class="title">app.rb</div>
+<div class="title">test.scala</div>
 <div class="content">
-<pre class="highlight"><code class="language-ruby" data-lang="ruby">require 'sinatra'
+<pre class="highlight"><code class="language-scala" data-lang="scala">def angleTrunc(a:Double) = {
+  var a1 = a
+  while(a1 &lt; 0.0){
+    a1 += Math.PI * 2
+  }
+  a1
+}
 
-get '/hi' do
-  "Hello World!"
-end</code></pre>
+case class Point(x:Double, y:Double)
+def delta(a:Point, b:Point) = {
+  Point(a.x - b.x, a.y - b.y)
+}
+
+def getAngleBetweenPoints(a:Point, b:Point) = {
+  val d = delta(b, a)
+  angleTrunc(Math.atan2(d.y, d.x))
+}
+
+
+Math.toDegrees(getAngleBetweenPoints(Point(0, 0), Point(10, 0)))</code></pre>
 </div>
 </div>
 <div class="listingblock">
