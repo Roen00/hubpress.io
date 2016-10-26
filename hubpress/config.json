@@ -4,7 +4,9 @@
     "repositoryName": "roen00.github.io",
     "branch": "master"
   },
-  "site": {},
+  "site": {
+    "logo": "http://i.imgur.com/DYSUoiL.jpg"
+  },
   "socialnetwork": {},
   "theme": {
     "name": "uno-zen"
