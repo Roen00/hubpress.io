@@ -1,7 +1,39 @@
 = changed title
 
+
+
 . the first element of the list
 
-
-
 :D :D :D
+
+Reference code like `types` or `methods` inline.
+
+....
+error: The requested operation returned error: 1954 Forbidden search for defensive operations manual
+absolutely fatal: operation initiation lost in the dodecahedron of doom
+would you like to die again? y/n
+....
+
+[[app-listing]]
+[source,ruby]
+.app.rb
+----
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+----
+
+
+[source, javascript]
+----
+it('renders', function () {
+  // Set any properties with this.set('myProperty', 'value')
+  // Handle any actions with this.on('myAction', function (val) { ... })
+
+  this.render(hbs`<div class="foo"> Hello </div>`)
+  expect(this.$('.foo')).to.have.length(1)
+  return capture(foo')
+})
+----
