@@ -15,14 +15,30 @@ would you like to die again? y/n
 ....
 
 [[app-listing]]
-[source,ruby]
-.app.rb
+[source,scala]
+.test.scala
 ----
-require 'sinatra'
+def angleTrunc(a:Double) = {
+  var a1 = a
+  while(a1 < 0.0){
+    a1 += Math.PI * 2
+  }
+  a1
+}
 
-get '/hi' do
-  "Hello World!"
-end
+case class Point(x:Double, y:Double)
+def delta(a:Point, b:Point) = {
+  Point(a.x - b.x, a.y - b.y)
+}
+
+def getAngleBetweenPoints(a:Point, b:Point) = {
+  val d = delta(b, a)
+  angleTrunc(Math.atan2(d.y, d.x))
+}
+
+
+Math.toDegrees(getAngleBetweenPoints(Point(0, 0), Point(10, 0)))
+
 ----
 
 
