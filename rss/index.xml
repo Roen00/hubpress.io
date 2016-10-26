@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>https://roen00.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 26 Oct 2016 14:02:34 GMT</lastBuildDate><atom:link href="https://roen00.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[changed title]]></title><description><![CDATA[<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>the first element of the list</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>:D :D :D</p>
+</div>
+<div class="paragraph">
+<p>Reference code like <code>types</code> or <code>methods</code> inline.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>error: The requested operation returned error: 1954 Forbidden search for defensive operations manual
+absolutely fatal: operation initiation lost in the dodecahedron of doom
+would you like to die again? y/n</pre>
+</div>
+</div>
+<div id="app-listing" class="listingblock">
+<div class="title">app.rb</div>
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">it('renders', function () {
+  // Set any properties with this.set('myProperty', 'value')
+  // Handle any actions with this.on('myAction', function (val) { ... })
+
+  this.render(hbs`&lt;div class="foo"&gt; Hello &lt;/div&gt;`)
+  expect(this.$('.foo')).to.have.length(1)
+  return capture(foo')
+})</code></pre>
+</div>
+</div>]]></description><link>https://roen00.github.io/2016/02/26/changed-title.html</link><guid isPermaLink="true">https://roen00.github.io/2016/02/26/changed-title.html</guid><pubDate>Fri, 26 Feb 2016 00:00:00 GMT</pubDate></item></channel></rss>
